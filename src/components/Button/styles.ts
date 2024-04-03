@@ -14,7 +14,8 @@ export const Button = styled.button`
   margin: 2rem;
   border-radius: 8px;
   font-weight: 500;
-  background-color: ${(props) => props.theme.colors.primary};
+  background: #007bff;
+
   &:disabled {
     opacity: 0.5;
   }

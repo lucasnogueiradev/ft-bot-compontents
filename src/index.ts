@@ -1,3 +1,3 @@
-import "./styles/global.css";
+// import "./styles/global.css";
 
-export { default as Button } from "./components/Teste/index";
+export { default as Button } from "./components/Button/Button";
