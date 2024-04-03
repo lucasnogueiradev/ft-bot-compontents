@@ -1,6 +1,6 @@
+import React from "react";
 import { useId, useState } from "react";
 import * as S from "./styles";
-import React from "react";
 
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
@@ -11,7 +11,7 @@ export interface InputProps
   InputProps?: InputProps;
 }
 
-export default function InputText({
+function InputText({
   label,
   name,
   type,
@@ -34,3 +34,4 @@ export default function InputText({
     </>
   );
 }
+export default InputText;

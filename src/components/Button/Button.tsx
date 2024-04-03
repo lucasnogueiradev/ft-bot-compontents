@@ -1,31 +1,22 @@
 import React from "react";
-
-export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode;
+import { StyledButton } from "./styles";
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   loading?: boolean;
-  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   size?: "small" | "medium" | "large";
-  type?: "button" | "submit";
   color?: "primary" | "secondary";
-  disabled?: boolean;
 }
 
-import * as S from "./styles";
-
-const Button = ({
+const Button: React.FC<ButtonProps> = ({
   children,
-  size = "medium",
-  color = "primary",
-  type = "button",
-  disabled,
-  onClick,
   loading = false,
   ...rest
-}: ButtonProps) => {
+}) => {
   return (
-    <S.Button type="button" disabled={loading} {...rest}>
+    <StyledButton disabled={loading} {...rest}>
       {loading ? "Carregando..." : children}
-    </S.Button>
+    </StyledButton>
   );
 };
+
 export default Button;
