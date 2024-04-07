@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.button`
   max-width: 100%;
-  background-color: #007bff;
-  height: 2rem;
-  color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+  width: 50px;
+  background-color: ${(props) => props.theme.colors.info};
+
+  color: ${(props) => props.theme.colors.white};
   font-family: "Roboto", sans-serif;
   font-size: 1.7rem;
-  color: #fff;
-  height: 4.5rem;
+
   border: 0;
   padding: 1rem;
   width: 90%;

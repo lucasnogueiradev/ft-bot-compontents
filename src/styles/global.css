@@ -8,10 +8,6 @@ body {
   width: 100%;
 }
 
-* {
-  font-family: Roboto, "Roboto Light", serif;
-}
-
 .MuiBreadcrumbs-root {
   border-bottom: 1px solid #eee;
   padding-bottom: 15px;

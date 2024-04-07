@@ -1,9 +1,6 @@
 import React from "react";
 import Button from "./Button";
 import { Meta, StoryObj } from "@storybook/react";
-import { ThemeProvider } from "styled-components";
-import dark from "../../styles/themes/Dark";
-import { useTheme } from "../hooks/theme";
 
 const meta = {
   title: "Components/Button",

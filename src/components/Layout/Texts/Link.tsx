@@ -1,9 +1,14 @@
 import React from "react";
-import { TextContainer, TitleContainer, LinkContainer } from "./styles";
-import { TextTituloProps, TitleProps, LinkProps } from "./types";
-function Link({ handlePasswordClick, to, title }: LinkProps) {
+import { LinkContainer } from "./styles";
+import { LinkProps } from "./types";
+
+function Link({ handlePasswordClick, to, title, size }: LinkProps) {
   return (
-    <LinkContainer onClick={handlePasswordClick} to={to}>
+    <LinkContainer
+      onClick={handlePasswordClick}
+      to={to}
+      style={{ fontSize: size }}
+    >
       {title}
     </LinkContainer>
   );

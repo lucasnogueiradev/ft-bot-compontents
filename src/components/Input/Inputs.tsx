@@ -1,4 +1,4 @@
-import { useId, useState } from "react";
+import React, { useId, useState } from "react";
 import * as S from "./styles";
 import { InputProps, CheckboxProps } from "./Input";
 

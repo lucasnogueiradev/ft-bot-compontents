@@ -2,8 +2,9 @@ import styled, { css } from "styled-components";
 import { ButtonProps } from "./Button";
 
 export const StyledButton = styled.button<ButtonProps>`
-  width: 100%;
-  height: ${({ size }) => {
+  width: 10rem;
+  height: 3rem;
+  /* height: ${({ size }) => {
     switch (size) {
       case "small":
         return "2rem";
@@ -12,17 +13,25 @@ export const StyledButton = styled.button<ButtonProps>`
       default:
         return "4.5rem";
     }
-  }};
+  }}; */
+
   cursor: ${({ loading }) => (loading ? "not-allowed" : "pointer")};
   font-family: "Roboto", sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   color: #fff;
   border: 0;
-  padding: 1rem;
-  margin: 2rem;
+  padding: 2rem auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  display: flex;
   border-radius: 8px;
   font-weight: 500;
-  background: ${({ color }) => (color === "secondary" ? "#ff0000" : "#007bff")};
+  background: ${({ color }) =>
+    color === "secondary"
+      ? (props) => props.theme.colors.tertiary
+      : (props) => props.theme.colors.info};
 
   &:disabled {
     opacity: 0.5;

@@ -1,10 +1,12 @@
 import React from "react";
-import { TextContainer, TitleContainer, LinkContainer } from "./styles";
-import { TextTituloProps, TitleProps, LinkProps } from "./types";
+import { TitleContainer } from "./styles";
+import { TitleProps } from "./types";
 
-const Titulo = ({ title, center }: TitleProps) => {
+const Titulo = ({ title, center, size, ...rest }: TitleProps) => {
   return (
-    <TitleContainer style={{ textAlign: "center" }}>{title}</TitleContainer>
+    <TitleContainer style={{ textAlign: "center", fontSize: size }} {...rest}>
+      {title}
+    </TitleContainer>
   );
 };
 

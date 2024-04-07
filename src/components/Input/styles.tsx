@@ -19,7 +19,7 @@ export const CheckboxInput = styled.input`
 `;
 export const CheckboxLabel = styled.label`
   font-size: 1.7rem;
-  color: #000;
+  color: ${(props) => props.theme.colors.gray};
   font-family: "Roboto", sans-serif;
 `;
 

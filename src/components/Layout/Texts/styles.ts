@@ -1,32 +1,45 @@
 import styled from "styled-components";
 
-export const TitleContainer = styled.h2`
-  font-family: "Poppins", sans-serif;
+import { Link } from "react-router-dom";
+import { LinkProps, TextProps, TitleProps } from "./types";
+
+export const TitleContainer = styled.h2<TitleProps>`
+  font-family: ${({ font }) =>
+    font === "secondary" ? "Poppins, sans-serif" : "Roboto, sans-serif"};
   font-weight: 600;
   font-style: normal;
-  margin: 1rem;
+  display: flex;
+  justify-content: center;
   margin: auto;
-  padding: 1rem;
+  background: transparent;
   width: 100%;
-  color: #000;
+  color: ${(props) => props.theme.colors.tertiary};
 `;
 
-export const TextContainer = styled.p`
-  font-family: "Roboto", sans-serif;
+export const TextContainer = styled.p<TextProps>`
+  font-family: ${({ font }) =>
+    font === "secondary" ? "Poppins, sans-serif" : "Roboto, sans-serif"};
   font-weight: 400;
-  color: #000;
+  color: ${(props) => props.theme.colors.font};
   font-style: normal;
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
 `;
 
-import { Link } from "react-router-dom";
-
-export const LinkContainer = styled(Link)`
+export const LinkContainer = styled(Link)<LinkProps>`
   color: blue;
-  padding: 1rem;
+  padding: 0.5rem;
+  color: ${(props) => props.theme.colors.success};
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: ${({ font }) =>
+    font === "secondary" ? "Poppins, sans-serif" : "Roboto, sans-serif"};
+  font-weight: 400;
+  font-style: normal;
 `;

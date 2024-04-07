@@ -1,12 +1,13 @@
-import { ContainerImage } from "./styles";
+import React from "react";
+import { ContainerImage, Image } from "./styles";
 import { ImageProps } from "./types";
 
-const Image = ({ src, alt }: ImageProps) => {
+const Img = ({ ...rest }: ImageProps) => {
   return (
     <ContainerImage>
-      <Image src={src} alt={alt} />
+      <Image {...rest} />
     </ContainerImage>
   );
 };
 
-export { Image };
+export default Img;

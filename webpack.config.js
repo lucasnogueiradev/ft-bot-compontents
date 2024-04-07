@@ -52,7 +52,8 @@ module.exports = {
       name: "remoteApp",
       filename: "remoteEntry.js",
       exposes: {
-        "./Button": "./src/index.ts",
+        "./Components": "./src/index.ts",
+        "./Hooks": "./src/hooks.ts",
       },
 
       shared: {

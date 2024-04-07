@@ -3,13 +3,16 @@ import { ContentContainer, Content } from "./styles";
 import { CardContentProps } from "./types";
 
 function CardContent({
-  children,
   contentSize,
-  color,
+  children,
   containerSize,
+  ...rest
 }: CardContentProps) {
   return (
-    <ContentContainer style={{ width: containerSize, background: color }}>
+    <ContentContainer
+      style={{ width: containerSize, height: "auto" }}
+      {...rest}
+    >
       <Content style={{ width: contentSize }}>{children}</Content>
     </ContentContainer>
   );

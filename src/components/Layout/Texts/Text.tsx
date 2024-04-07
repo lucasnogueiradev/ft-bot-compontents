@@ -1,8 +1,12 @@
 import React from "react";
 import { TextContainer } from "./styles";
-import { TextTituloProps } from "./types";
-const Text = ({ text, size }: TextTituloProps) => {
-  return <TextContainer style={{ fontSize: size }}>{text}</TextContainer>;
+import { TextProps } from "./types";
+const Text = ({ text, size, ...rest }: TextProps) => {
+  return (
+    <TextContainer style={{ fontSize: size }} {...rest}>
+      {text}
+    </TextContainer>
+  );
 };
 
 export default Text;

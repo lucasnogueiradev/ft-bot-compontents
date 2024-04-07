@@ -1,0 +1,52 @@
+"use strict";(self.webpackChunkft_bot_components=self.webpackChunkft_bot_components||[]).push([[391],{"./src/components/Loading/loading.stories.tsx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{SkeletonLoading:()=>SkeletonLoading,__namedExportsOrder:()=>__namedExportsOrder,default:()=>loading_stories});var react=__webpack_require__("./node_modules/react/index.js"),esm_extends=__webpack_require__("./node_modules/@babel/runtime/helpers/esm/extends.js"),objectWithoutPropertiesLoose=__webpack_require__("./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js"),clsx=__webpack_require__("./node_modules/clsx/dist/clsx.mjs"),styled_engine=__webpack_require__("./node_modules/@mui/styled-engine/index.js"),styleFunctionSx=__webpack_require__("./node_modules/@mui/system/esm/styleFunctionSx/styleFunctionSx.js"),extendSxProp=__webpack_require__("./node_modules/@mui/system/esm/styleFunctionSx/extendSxProp.js"),useTheme=__webpack_require__("./node_modules/@mui/system/esm/useTheme.js"),jsx_runtime=__webpack_require__("./node_modules/react/jsx-runtime.js");const _excluded=["className","component"];var ClassNameGenerator=__webpack_require__("./node_modules/@mui/utils/ClassNameGenerator/ClassNameGenerator.js"),createTheme=__webpack_require__("./node_modules/@mui/material/styles/createTheme.js"),identifier=__webpack_require__("./node_modules/@mui/material/styles/identifier.js"),generateUtilityClasses=__webpack_require__("./node_modules/@mui/utils/generateUtilityClasses/generateUtilityClasses.js");const Box_boxClasses=(0,generateUtilityClasses.A)("MuiBox",["root"]),defaultTheme=(0,createTheme.A)(),Box=function createBox(options={}){const{themeId,defaultTheme,defaultClassName="MuiBox-root",generateClassName}=options,BoxRoot=(0,styled_engine.default)("div",{shouldForwardProp:prop=>"theme"!==prop&&"sx"!==prop&&"as"!==prop})(styleFunctionSx.A);return react.forwardRef((function Box(inProps,ref){const theme=(0,useTheme.A)(defaultTheme),_extendSxProp=(0,extendSxProp.A)(inProps),{className,component="div"}=_extendSxProp,other=(0,objectWithoutPropertiesLoose.A)(_extendSxProp,_excluded);return(0,jsx_runtime.jsx)(BoxRoot,(0,esm_extends.A)({as:component,ref,className:(0,clsx.A)(className,generateClassName?generateClassName(defaultClassName):defaultClassName),theme:themeId&&theme[themeId]||theme},other))}))}({themeId:identifier.A,defaultTheme,defaultClassName:Box_boxClasses.root,generateClassName:ClassNameGenerator.A.generate}),Box_Box=Box;var emotion_react_browser_esm=__webpack_require__("./node_modules/@emotion/react/dist/emotion-react.browser.esm.js"),composeClasses=__webpack_require__("./node_modules/@mui/utils/composeClasses/composeClasses.js");function getUnit(input){return String(input).match(/[\d.\-+]*\s*(.*)/)[1]||""}function toUnitless(length){return parseFloat(length)}var formatMuiErrorMessage=__webpack_require__("./node_modules/@mui/utils/formatMuiErrorMessage/formatMuiErrorMessage.js"),clamp=__webpack_require__("./node_modules/@mui/utils/clamp/clamp.js");function clampWrapper(value,min=0,max=1){return(0,clamp.A)(value,min,max)}function decomposeColor(color){if(color.type)return color;if("#"===color.charAt(0))return decomposeColor(function hexToRgb(color){color=color.slice(1);const re=new RegExp(`.{1,${color.length>=6?2:1}}`,"g");let colors=color.match(re);return colors&&1===colors[0].length&&(colors=colors.map((n=>n+n))),colors?`rgb${4===colors.length?"a":""}(${colors.map(((n,index)=>index<3?parseInt(n,16):Math.round(parseInt(n,16)/255*1e3)/1e3)).join(", ")})`:""}(color));const marker=color.indexOf("("),type=color.substring(0,marker);if(-1===["rgb","rgba","hsl","hsla","color"].indexOf(type))throw new Error((0,formatMuiErrorMessage.A)(9,color));let colorSpace,values=color.substring(marker+1,color.length-1);if("color"===type){if(values=values.split(" "),colorSpace=values.shift(),4===values.length&&"/"===values[3].charAt(0)&&(values[3]=values[3].slice(1)),-1===["srgb","display-p3","a98-rgb","prophoto-rgb","rec-2020"].indexOf(colorSpace))throw new Error((0,formatMuiErrorMessage.A)(10,colorSpace))}else values=values.split(",");return values=values.map((value=>parseFloat(value))),{type,values,colorSpace}}function recomposeColor(color){const{type,colorSpace}=color;let{values}=color;return-1!==type.indexOf("rgb")?values=values.map(((n,i)=>i<3?parseInt(n,10):n)):-1!==type.indexOf("hsl")&&(values[1]=`${values[1]}%`,values[2]=`${values[2]}%`),values=-1!==type.indexOf("color")?`${colorSpace} ${values.join(" ")}`:`${values.join(", ")}`,`${type}(${values})`}function alpha(color,value){return color=decomposeColor(color),value=clampWrapper(value),"rgb"!==color.type&&"hsl"!==color.type||(color.type+="a"),"color"===color.type?color.values[3]=`/${value}`:color.values[3]=value,recomposeColor(color)}var styled=__webpack_require__("./node_modules/@mui/material/styles/styled.js"),useThemeProps=__webpack_require__("./node_modules/@mui/material/styles/useThemeProps.js"),generateUtilityClass=__webpack_require__("./node_modules/@mui/utils/generateUtilityClass/generateUtilityClass.js");function getSkeletonUtilityClass(slot){return(0,generateUtilityClass.Ay)("MuiSkeleton",slot)}(0,generateUtilityClasses.A)("MuiSkeleton",["root","text","rectangular","rounded","circular","pulse","wave","withChildren","fitContent","heightAuto"]);const Skeleton_excluded=["animation","className","component","height","style","variant","width"];let _t,_t2,_t3,_t4,_=t=>t;const pulseKeyframe=(0,emotion_react_browser_esm.i7)(_t||(_t=_`
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`)),waveKeyframe=(0,emotion_react_browser_esm.i7)(_t2||(_t2=_`
+  0% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    /* +0.5s of delay between each loop */
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+`)),SkeletonRoot=(0,styled.Ay)("span",{name:"MuiSkeleton",slot:"Root",overridesResolver:(props,styles)=>{const{ownerState}=props;return[styles.root,styles[ownerState.variant],!1!==ownerState.animation&&styles[ownerState.animation],ownerState.hasChildren&&styles.withChildren,ownerState.hasChildren&&!ownerState.width&&styles.fitContent,ownerState.hasChildren&&!ownerState.height&&styles.heightAuto]}})((({theme,ownerState})=>{const radiusUnit=getUnit(theme.shape.borderRadius)||"px",radiusValue=toUnitless(theme.shape.borderRadius);return(0,esm_extends.A)({display:"block",backgroundColor:theme.vars?theme.vars.palette.Skeleton.bg:alpha(theme.palette.text.primary,"light"===theme.palette.mode?.11:.13),height:"1.2em"},"text"===ownerState.variant&&{marginTop:0,marginBottom:0,height:"auto",transformOrigin:"0 55%",transform:"scale(1, 0.60)",borderRadius:`${radiusValue}${radiusUnit}/${Math.round(radiusValue/.6*10)/10}${radiusUnit}`,"&:empty:before":{content:'"\\00a0"'}},"circular"===ownerState.variant&&{borderRadius:"50%"},"rounded"===ownerState.variant&&{borderRadius:(theme.vars||theme).shape.borderRadius},ownerState.hasChildren&&{"& > *":{visibility:"hidden"}},ownerState.hasChildren&&!ownerState.width&&{maxWidth:"fit-content"},ownerState.hasChildren&&!ownerState.height&&{height:"auto"})}),(({ownerState})=>"pulse"===ownerState.animation&&(0,emotion_react_browser_esm.AH)(_t3||(_t3=_`
+      animation: ${0} 2s ease-in-out 0.5s infinite;
+    `),pulseKeyframe)),(({ownerState,theme})=>"wave"===ownerState.animation&&(0,emotion_react_browser_esm.AH)(_t4||(_t4=_`
+      position: relative;
+      overflow: hidden;
+
+      /* Fix bug in Safari https://bugs.webkit.org/show_bug.cgi?id=68196 */
+      -webkit-mask-image: -webkit-radial-gradient(white, black);
+
+      &::after {
+        animation: ${0} 2s linear 0.5s infinite;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          ${0},
+          transparent
+        );
+        content: '';
+        position: absolute;
+        transform: translateX(-100%); /* Avoid flash during server-side hydration */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+      }
+    `),waveKeyframe,(theme.vars||theme).palette.action.hover))),Skeleton_Skeleton=react.forwardRef((function Skeleton(inProps,ref){const props=(0,useThemeProps.A)({props:inProps,name:"MuiSkeleton"}),{animation="pulse",className,component="span",height,style,variant="text",width}=props,other=(0,objectWithoutPropertiesLoose.A)(props,Skeleton_excluded),ownerState=(0,esm_extends.A)({},props,{animation,component,variant,hasChildren:Boolean(other.children)}),classes=(ownerState=>{const{classes,variant,animation,hasChildren,width,height}=ownerState,slots={root:["root",variant,animation,hasChildren&&"withChildren",hasChildren&&!width&&"fitContent",hasChildren&&!height&&"heightAuto"]};return(0,composeClasses.A)(slots,getSkeletonUtilityClass,classes)})(ownerState);return(0,jsx_runtime.jsx)(SkeletonRoot,(0,esm_extends.A)({as:component,ref,className:(0,clsx.A)(classes.root,className),ownerState},other,{style:(0,esm_extends.A)({width,height},style)}))}));function SkeletonLogin(){return react.createElement(Box_Box,{sx:{width:300}},react.createElement(Skeleton_Skeleton,{animation:"wave",width:90,height:40,sx:{fontSize:"7rem",margin:"auto",display:"flex"}}),react.createElement(Skeleton_Skeleton,{variant:"rounded",width:"100%",height:200}),react.createElement(Skeleton_Skeleton,{animation:"wave",width:"100%",height:40,sx:{fontSize:"7rem",margin:"auto",display:"flex"}}),react.createElement(Skeleton_Skeleton,{animation:"wave",width:"100%",height:40,sx:{fontSize:"7rem",margin:"auto",display:"flex"}}),react.createElement(Skeleton_Skeleton,{variant:"rounded",width:"100%",height:90}))}SkeletonLogin.__docgenInfo={description:"",methods:[],displayName:"SkeletonLogin"};const loading_stories={title:"Components/Skeleton",component:SkeletonLogin};var SkeletonLoading={render:function(){return react.createElement(SkeletonLogin,null)}};SkeletonLoading.parameters={...SkeletonLoading.parameters,docs:{...SkeletonLoading.parameters?.docs,source:{originalSource:"{\n  render: () => <Skeleton />\n}",...SkeletonLoading.parameters?.docs?.source}}};const __namedExportsOrder=["SkeletonLoading"]}}]);
+//# sourceMappingURL=components-Loading-loading-stories.e47a7dc7.iframe.bundle.js.map

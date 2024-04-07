@@ -1,15 +1,20 @@
-export type TitleProps = {
-  title: string;
+export interface TitleProps {
+  title?: string;
   center?: "center" | "start" | "end";
-};
+  font?: "primary" | "secondary";
+  size?: number;
+}
 
-export type TextTituloProps = {
-  text: string;
+export interface TextProps {
+  text?: string;
   size?: numer;
-};
+  font?: "primary" | "secondary";
+}
 
 interface LinkProps {
   to: string;
+  size?: number;
   handlePasswordClick?: () => void;
-  title?: string; // Change the type of 'title' prop to 'string'
+  font?: "primary" | "secondary";
+  title?: string;
 }
