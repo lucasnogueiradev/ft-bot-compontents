@@ -26,7 +26,7 @@ export const StyledButton = styled.button<ButtonProps>`
   justify-content: center;
   margin: 1rem auto;
   display: flex;
-  border-radius: 8px;
+  border-radius: 2.1rem;
   font-weight: 500;
   background: ${({ color }) =>
     color === "secondary"

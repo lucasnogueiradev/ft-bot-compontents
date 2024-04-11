@@ -32,7 +32,10 @@ function InputText({
         <S.Input id={labelId} name={name} type={type} {...rest} />
         {endAdornment && <S.StartAdornment>{endAdornment}</S.StartAdornment>}
       </S.ContainerInput>
-      {errorMessage && <S.Error>{errorMessage}</S.Error>}
+
+      <S.ContentInput>
+        {errorMessage && <S.Error>{errorMessage}</S.Error>}
+      </S.ContentInput>
     </S.Container>
   );
 }

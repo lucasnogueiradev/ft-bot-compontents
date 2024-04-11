@@ -10,10 +10,12 @@ export const BetweenContainer = styled.div<CardBetweenProps>`
   width: 100%;
   display: flex;
   margin: auto;
-  padding: 1rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
   height: auto;
   max-height: 100%;
   justify-content: space-between;
+  align-items: center;
   background: ${({ color }) =>
     color === "secondary"
       ? (props) => props.theme.colors.white
@@ -23,15 +25,17 @@ export const BetweenContainer = styled.div<CardBetweenProps>`
 export const CenterContainer = styled.div<CardCenterProps>`
   width: 100%;
   display: flex;
+  border-radius: 1rem;
   height: auto;
   max-height: 100%;
   margin: 0.5rem auto auto auto;
   justify-content: center;
   color: ${(props) => props.theme.colors.font};
-  background: ${({ color }) =>
-    color === "secondary"
-      ? (props) => props.theme.colors.white
-      : (props) => props.theme.colors.white};
+  background: ${({ bg }) =>
+    (bg === "primary" && ((props) => props.theme.colors.primary)) ||
+    (bg === "secondary" && ((props) => props.theme.colors.secondary)) ||
+    (bg === "white" && ((props) => props.theme.colors.white)) ||
+    (bg === "tertiary" && ((props) => props.theme.colors.tertiary))};
 `;
 
 // Card content
@@ -43,9 +47,18 @@ export const ContentContainer = styled.div<CardContentProps>`
   justify-content: center;
   margin: 0;
   background: ${({ bg }) =>
-    bg === "secondary"
-      ? (props) => props.theme.colors.tertiary
-      : (props) => props.theme.colors.white};
+    (bg === "primary" && ((props) => props.theme.colors.primary)) ||
+    (bg === "secondary" && ((props) => props.theme.colors.secondary)) ||
+    (bg === "white" && ((props) => props.theme.colors.white)) ||
+    (bg === "tertiary" && ((props) => props.theme.colors.tertiary))};
+
+  box-shadow: ${({ box }) =>
+    (box === "primary" &&
+      `-1px -0.5px 32px -3px ${(props: any) => props.theme.shadows.gray}`) ||
+    (box === "secondary" &&
+      `-1px -0.5px 32px -3px ${(props: any) => props.theme.shadows.secondary}`) ||
+    (box === "none" && "none")};
+  border-radius: 1rem;
 `;
 export const Content = styled.div<CardContentProps>`
   display: flex;
@@ -54,9 +67,10 @@ export const Content = styled.div<CardContentProps>`
   max-height: 100%;
   align-items: stretch;
   background: ${({ bg }) =>
-    bg === "secondary"
-      ? (props) => props.theme.colors.white
-      : (props) => props.theme.colors.white};
+    (bg === "primary" && ((props) => props.theme.colors.primary)) ||
+    (bg === "secondary" && ((props) => props.theme.colors.secondary)) ||
+    (bg === "white" && ((props) => props.theme.colors.white)) ||
+    (bg === "tertiary" && ((props) => props.theme.colors.tertiary))};
 `;
 
 // Card container
@@ -68,9 +82,10 @@ export const ContainerWrapper = styled.div<CardContainerProps>`
   max-height: 100vh;
 
   background: ${({ bg }) =>
-    bg === "secondary"
-      ? (props) => props.theme.colors.tertiary
-      : (props) => props.theme.colors.white};
+    (bg === "primary" && ((props) => props.theme.colors.primary)) ||
+    (bg === "secondary" && ((props) => props.theme.colors.secondary)) ||
+    (bg === "white" && ((props) => props.theme.colors.white)) ||
+    (bg === "tertiary" && ((props) => props.theme.colors.tertiary))};
 
   display: flex;
 `;
@@ -86,9 +101,10 @@ export const ContentContainerR = styled.div<CardContentProps>`
   border-radius: ${({ radius }) =>
     radius === "right" ? "0 10rem 10rem 0" : "10rem 0rem 0rem 10rem"};
   background: ${({ bg }) =>
-    bg === "secondary"
-      ? (props) => props.theme.colors.white
-      : (props) => props.theme.colors.tertiary};
+    (bg === "primary" && ((props) => props.theme.colors.primary)) ||
+    (bg === "secondary" && ((props) => props.theme.colors.secondary)) ||
+    (bg === "white" && ((props) => props.theme.colors.white)) ||
+    (bg === "tertiary" && ((props) => props.theme.colors.tertiary))};
 `;
 export const ContentR = styled.div<CardContentProps>`
   display: flex;
@@ -97,7 +113,8 @@ export const ContentR = styled.div<CardContentProps>`
   max-height: 100%;
   align-items: stretch;
   background: ${({ bg }) =>
-    bg === "secondary"
-      ? (props) => props.theme.colors.white
-      : (props) => props.theme.colors.white};
+    (bg === "primary" && ((props) => props.theme.colors.primary)) ||
+    (bg === "secondary" && ((props) => props.theme.colors.secondary)) ||
+    (bg === "white" && ((props) => props.theme.colors.white)) ||
+    (bg === "tertiary" && ((props) => props.theme.colors.tertiary))};
 `;

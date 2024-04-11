@@ -7,16 +7,18 @@ export const Input = styled.input`
   padding: 1rem;
   border: none;
   font-size: 1rem;
-  border-radius: 4px;
+  border-radius: 1rem;
   background: #e0e0e0;
+  -webkit-box-shadow: 0 0 0px 1000px #e0e0e0 inset;
   &::placeholder {
-    color: ${(props) => props.theme.colors.gray};
+    color: ${(props) => props.theme.colors.font};
     font-size: 1rem;
     font-family: "Popins", sans-serif;
   }
   &:focus {
     border-color: none;
     outline: none;
+    background: #e0e0e0;
   }
 `;
 
@@ -25,7 +27,7 @@ export const Container = styled.div`
 `;
 export const Label = styled.label`
   justify-content: start;
-  color: ${(props) => props.theme.colors.gray};
+  color: ${(props) => props.theme.colors.font};
   font-family: "Poppins", sans-serif;
   display: flex;
   width: 72%;
@@ -42,13 +44,15 @@ export const ContainerInput = styled.div`
   width: 70%;
   max-width: 70%;
   background: #e0e0e0;
+
   border-radius: 10px;
-  padding: 0rem 1rem;
+  padding: 0 0 0 1rem;
   display: flex;
   margin: auto;
   &:focus-within {
     border-color: ${(props) => props.theme.colors.tertiary};
     outline: 1px solid ${(props) => props.theme.colors.tertiary};
+    background: #e0e0e0;
     ${Adornment} {
       svg {
         color: ${(props) => props.theme.colors.tertiary};
@@ -74,15 +78,17 @@ export const StartAdornment = styled(Adornment)`
 `;
 
 export const Error = styled.span`
-  width: 10%;
-  position: absolute;
-  max-width: 10%;
-  justify-content: start;
-  font-size: 0.8rem;
+  width: 100%;
   font-family: "Poppins", sans-serif;
-  display: flex;
-  width: 72%;
+  position: absolute;
   color: red;
-  padding: 0.4rem 0.5rem 0.5rem 0;
-  margin: 0rem auto auto 3.9rem;
+  font-size: 0.8rem;
+  bottom: -1.2rem;
+`;
+
+export const ContentInput = styled.div`
+  position: relative;
+  width: 70%;
+  max-width: 70%;
+  margin: auto;
 `;

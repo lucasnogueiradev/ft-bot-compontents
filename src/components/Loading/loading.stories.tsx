@@ -13,5 +13,5 @@ type Story = StoryObj<typeof meta> & {
 };
 
 export const SkeletonLoading: Story = {
-  render: () => <Skeleton />,
+  render: () => <Skeleton loading={true} />,
 };

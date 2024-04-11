@@ -53,7 +53,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 }));
 
 interface IToggleProps {
-  checked: boolean;
+  checked?: boolean;
   onChange(): void;
 }
 export function Toggle({ checked, onChange }: IToggleProps) {

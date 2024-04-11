@@ -3,14 +3,14 @@ export default {
   title: "dark",
 
   colors: {
-    primary: "#101a23",
-    secondary: "#2A343C",
+    primary: "#141414",
+    secondary: "#111219",
     tertiary: "#19746B",
 
     font: "#a3a2a2",
     white: "#fff",
     black: "#000",
-    gray: "#a7adb1",
+    gray: "#d6d4d4",
 
     success: "#009965",
     info: "#2849D9",
