@@ -7,7 +7,7 @@ import {
 } from "./types";
 
 export const BetweenContainer = styled.div<CardBetweenProps>`
-  width: 100%;
+  width: auto;
   display: flex;
   margin: auto;
   padding: 1rem;
@@ -16,10 +16,12 @@ export const BetweenContainer = styled.div<CardBetweenProps>`
   max-height: 100%;
   justify-content: space-between;
   align-items: center;
-  background: ${({ color }) =>
-    color === "secondary"
-      ? (props) => props.theme.colors.white
-      : (props) => props.theme.colors.white};
+  background: ${({ bg }) =>
+    (bg === "primary" && ((props) => props.theme.colors.primary)) ||
+    (bg === "secondary" && ((props) => props.theme.colors.secondary)) ||
+    (bg === "white" && ((props) => props.theme.colors.white)) ||
+    (bg === "tertiary" && ((props) => props.theme.colors.tertiary)) ||
+    (bg === "transparent" && "transparent")};
 `;
 
 export const CenterContainer = styled.div<CardCenterProps>`
@@ -104,7 +106,8 @@ export const ContentContainerR = styled.div<CardContentProps>`
     (bg === "primary" && ((props) => props.theme.colors.primary)) ||
     (bg === "secondary" && ((props) => props.theme.colors.secondary)) ||
     (bg === "white" && ((props) => props.theme.colors.white)) ||
-    (bg === "tertiary" && ((props) => props.theme.colors.tertiary))};
+    (bg === "tertiary" && ((props) => props.theme.colors.tertiary)) ||
+    (bg === "transparent" && "transparent")};
 `;
 export const ContentR = styled.div<CardContentProps>`
   display: flex;

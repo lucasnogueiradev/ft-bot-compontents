@@ -22,7 +22,13 @@ const Header = () => {
   return (
     <>
       <HeaderContainer>
-        <HeaderContent></HeaderContent>
+        <HeaderContent>
+          <IconFaUser size={""} />
+          <Toggle
+            checked={theme.title === "dark"}
+            onChange={handleChangeTheme}
+          />
+        </HeaderContent>
       </HeaderContainer>
     </>
   );

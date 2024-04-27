@@ -9,6 +9,7 @@ export interface TextProps {
   text?: string;
   size?: numer;
   font?: "primary" | "secondary";
+  color?: "primary" | "secondary";
 }
 
 interface LinkProps {

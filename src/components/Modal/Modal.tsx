@@ -1,21 +1,22 @@
 // ModalComponent.js
 import React, { Children } from "react";
 import Modal from "react-modal";
+import { IoClose } from "react-icons/io5";
 
 const customStyles = {
   backgroundColor: "#121212",
 
   content: {
-    top: "50%",
+    top: "40%",
+    width: "50%",
     left: "50%",
     right: "auto",
     bottom: "auto",
     marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
+    transform: "translate(-40%, -50%)",
     fontFamily: "Roboto, sans-serif",
-    borderRadius: "8px",
-    background: "#121212",
-    backgroundColor: "#727272",
+    borderRadius: "1.5rem",
+    background: "rgba(0, 0, 0, 0.9)",
   },
 };
 
@@ -44,10 +45,12 @@ export default function ModalComponent({
       isOpen={isOpen}
       onAfterOpen={afterOpenModal}
       onRequestClose={closeModal}
-      style={customStyles}
-      contentLabel="Example Modal"
+      className="modal-content"
+      overlayClassName="react-modal"
     >
-      <button onClick={closeModal}>x</button>
+      <button type="button" onClick={closeModal} className="modal-close">
+        <IoClose className="icon-close" />
+      </button>
       {children}
     </Modal>
   );

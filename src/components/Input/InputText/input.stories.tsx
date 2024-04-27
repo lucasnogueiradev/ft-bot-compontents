@@ -23,6 +23,6 @@ export const Input: Story = {
   args: {
     placeholder: "Email",
     label: "E-mail",
-    startAdornment: <FaUser />,
+    startAdornment: true ? <FaUser /> : null,
   },
 };

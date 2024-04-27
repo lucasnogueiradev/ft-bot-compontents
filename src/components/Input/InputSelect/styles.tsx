@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 // // Styles Input text
-export const Input = styled.input`
+export const StyledSelect = styled.select`
   width: 100%;
   max-width: 100%;
   padding: 1rem;

@@ -49,10 +49,10 @@ const preview: Preview = {
       return (
         <ProviderTheme theme={theme}>
           <ThemeProvider theme={theme}>
-            <Toggle
+            {/* <Toggle
               onChange={handleChangeTheme}
               // checked={darkTheme.title === "dark"}
-            />
+            /> */}
             <Story />
           </ThemeProvider>
         </ProviderTheme>

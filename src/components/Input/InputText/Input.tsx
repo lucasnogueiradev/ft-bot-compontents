@@ -15,7 +15,7 @@ function InputText({
   label,
   name,
   type,
-  startAdornment = false,
+  startAdornment = true,
   endAdornment = false,
   errorMessage,
   ...rest

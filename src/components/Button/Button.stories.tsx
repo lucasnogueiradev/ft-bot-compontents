@@ -12,24 +12,61 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primário: Story = {
-  render: (args) => <Button>{args.children}</Button>,
+  render: (args) => (
+    <Button backgroundColor={args.backgroundColor} color={args.color}>
+      {args.children}
+    </Button>
+  ),
   args: {
+    onClick: () => console.log("Clicou"),
     children: "Button",
+    backgroundColor: "primary",
     color: "primary",
   },
 };
 
-// export const Primário: StoryObj = {
-//   render: (args) => (
-//     <Button primario title="teste" key={""} loading>
-//       {args.}
-//     </Button>
-//   ),
-//   args: {
-//     title: "Button",
-//   },
-// };
+export const Secondary: Story = {
+  render: (args) => (
+    <Button backgroundColor={args.backgroundColor} color={args.color}>
+      {args.children}
+    </Button>
+  ),
+  args: {
+    onClick: () => console.log("Clicou"),
+    children: "Button",
+    color: "primary",
 
+    backgroundColor: "secondary",
+  },
+};
+
+export const Tertiary: Story = {
+  render: (args) => (
+    <Button backgroundColor={args.backgroundColor} color={args.color}>
+      {args.children}
+    </Button>
+  ),
+  args: {
+    onClick: () => console.log("Clicou"),
+    children: "Button",
+    backgroundColor: "tertiary",
+    color: "primary",
+  },
+};
+
+export const Onlytext: Story = {
+  render: (args) => (
+    <Button backgroundColor={args.backgroundColor} color={args.color}>
+      {args.children}
+    </Button>
+  ),
+  args: {
+    onClick: () => console.log("Clicou"),
+    children: "Button",
+    backgroundColor: "onlytext",
+    color: "secondary",
+  },
+};
 // export const Secundário: Story = {
 //   render: (args) => <Button secundario>{args.children}</Button>,
 //   args: {
@@ -37,12 +74,11 @@ export const Primário: Story = {
 //   },
 // };
 
-// export const Carregando: Story = {
-//   render: (args) => (
-//     <Button carregando={args.carregando}>{args.children}</Button>
-//   ),
-//   args: {
-//     children: "Botão",
-//     carregando: true,
-//   },
-// };
+export const Loading: Story = {
+  render: (args) => <Button loading={args.loading}>{args.children}</Button>,
+  args: {
+    children: "Botão",
+    loading: true,
+    color: "primary",
+  },
+};

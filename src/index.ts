@@ -13,9 +13,14 @@ export { default as CardContentRadius } from "./components/Layout/Cards/CardCont
 export { default as Loading } from "./components/Loading/Loading";
 export { default as Modal } from "./components/Modal/index";
 export { default as ModalComponent } from "./components/Modal/Modal";
+export { default as ContentBody } from "./components/Content/BodyContent";
 // components
 export { default as Button } from "./components/Button/Button";
 export { default as InputText } from "./components/Input/InputText/Input";
+export { default as Autocomplete } from "./components/Input/autoComplete/AutoComplete";
+export { default as SelectInput } from "./components/Input/InputSelect/InputSelect";
+export { default as Table } from "./components/Table/Table";
+export { default as TableContent } from "./components/Table/TableLayout";
 
 // Icons
 export { default as IconGoogle } from "./components/Layout/Icons/IconGoogle";
@@ -28,6 +33,10 @@ export { default as IconEmail } from "./components/Layout/Icons/IconEmail";
 export { default as IconPhone } from "./components/Layout/Icons/IconPhone";
 export { default as IconUser } from "./components/Layout/Icons/IconUser";
 export { default as IconChat } from "./components/Layout/Icons/IconChat";
+export { default as IconAdd } from "./components/Layout/Icons/IconAdd";
+export { default as IconSettings } from "./components/Layout/Icons/IconSettings";
+export { default as IconEdit } from "./components/Layout/Icons/IconEdit";
+export { default as IconUsers } from "./components/Layout/Icons/IconUsers";
 
 // Texts
 export { default as Titulo } from "./components/Layout/Texts/Titulo";

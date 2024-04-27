@@ -13,14 +13,20 @@ export const TitleContainer = styled.h2<TitleProps>`
   margin: auto;
   background: transparent;
   width: 100%;
-  color: ${(props) => props.theme.colors.tertiary};
+  color: ${({ color }) =>
+    color === "primary"
+      ? (props) => props.theme.colors.font
+      : (props) => props.theme.colors.secondary};
 `;
 
 export const TextContainer = styled.p<TextProps>`
   font-family: ${({ font }) =>
     font === "secondary" ? "Poppins, sans-serif" : "Roboto, sans-serif"};
   font-weight: 400;
-  color: ${(props) => props.theme.colors.font};
+  color: ${({ color }) =>
+    color === "primary"
+      ? (props) => props.theme.colors.font
+      : (props) => props.theme.colors.secondary};
   font-style: normal;
   padding: 0;
   margin: 0;

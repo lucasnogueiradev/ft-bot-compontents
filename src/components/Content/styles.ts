@@ -7,7 +7,6 @@ export const Container = styled.div`
   max-height: 81vh;
   margin: 1rem;
   flex-direction: column;
-
   background: ${(props) => props.theme.colors.gray};
   color: #353535;
   border-radius: 1rem;
@@ -16,4 +15,13 @@ export const Container = styled.div`
   display: flex;
   overflow-y: scroll;
   transition: all 0.5s;
+`;
+
+export const ContainerBody = styled.div`
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  background: transparent;
+  height: 70vh;
+  max-height: 70vh;
 `;

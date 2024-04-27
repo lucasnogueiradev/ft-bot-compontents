@@ -20,7 +20,7 @@ export const Conainter = styled.div`
   text-decoration: none;
   overflow: hidden;
   display: flex;
-  background: ${(props) => props.theme.colors.secondary};
+  background: ${(props) => props.theme.colors.warning};
   z-index: 9;
   height: 100vh;
   transition: all 0.5s;
@@ -38,7 +38,7 @@ export const Conainter = styled.div`
   .slider {
     color: ${(props) => props.theme.colors.white};
     height: 100vh;
-    background: ${(props) => props.theme.colors.primary};
+    background: ${(props) => props.theme.colors.warning};
     width: 15rem;
     transition: all 0.5s;
     z-index: 9;
@@ -124,7 +124,7 @@ export const Conainter = styled.div`
 `;
 export const Submenu = styled.div`
   margin-top: 0.6rem;
-  background: ${(props) => props.theme.colors.primary};
+  background: ${(props) => props.theme.colors.secondary};
   padding-left: 1rem;
   width: 223px;
   margin-left: -3rem;

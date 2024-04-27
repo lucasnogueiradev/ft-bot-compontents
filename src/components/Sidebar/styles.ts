@@ -33,7 +33,7 @@ export const Navigation = styled.nav<ToggleButtonProps>`
   display: inline-block;
   border-radius: 0.8rem;
   color: ${(props) => props.theme.colors.white};
-  background: ${(props) => props.theme.colors.primary};
+  background: ${(props) => props.theme.colors.secondary};
   transition: ll 0.5s;
 `;
 export const List = styled.ul<ToggleButtonProps>`
@@ -80,7 +80,7 @@ export const List = styled.ul<ToggleButtonProps>`
     width: 100%;
     max-width: 100%;
     height: 100%;
-    background: ${(props) => props.theme.colors.primary};
+    background: ${(props) => props.theme.colors.secondary};
     border: none;
     outline: none;
     border-bottom-right-radius: 20px;
@@ -102,7 +102,7 @@ export const List = styled.ul<ToggleButtonProps>`
     left: 0;
     width: 100%;
     height: 100%;
-    background: ${(props) => props.theme.colors.primary};
+    background: ${(props) => props.theme.colors.secondary};
     border-top-right-radius: 20px;
   }
   .active .bloco:nth-child(1),
