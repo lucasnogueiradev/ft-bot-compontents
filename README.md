@@ -1,46 +1,56 @@
-# Getting Started with Create React App
+# components
+Bem-vindo ao repositório do **ft-bot-components**! Este projeto é uma solução abrangente para o desenvolvimento de uma biblioteca de componentes reutilizáveis e a integração com microserviços. Ele é projetado para facilitar a criação e a manutenção de componentes de UI e a configuração de um ambiente de desenvolvimento eficiente usando Storybook, Webpack e microserviços.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Estrutura do Projeto
+### 📦 Componentização de Componentes
+Este projeto oferece uma abordagem modular para o desenvolvimento de componentes de interface do usuário (UI). A biblioteca de componentes é estruturada para ser reutilizável e configurável, permitindo que você construa e gerencie seus componentes de forma eficiente.
 
-## Available Scripts
+### 🛠️ Storybook
+Integração com [Storybook](https://storybook.js.org/) para uma experiência de desenvolvimento visual e interativa. Storybook facilita a criação, teste e documentação de componentes isolados, permitindo uma colaboração mais eficaz entre designers e desenvolvedores.
 
-In the project directory, you can run:
+### ⚙️ Webpack
+Utiliza [Webpack](https://webpack.js.org/) para empacotar e otimizar os recursos do projeto. O Webpack é configurado para suportar a compilação de JavaScript, CSS e outros ativos, garantindo que seu código seja otimizado e pronto para produção.
 
-### `npm start`
+### 🌀 Microserviços
+A arquitetura do projeto é baseada em microserviços, permitindo uma abordagem escalável e modular para o desenvolvimento e implantação de funcionalidades. Cada microserviço é independente e pode ser desenvolvido, testado e implantado separadamente.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Dependências
+O projeto utiliza as seguintes bibliotecas:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- `@emotion/react`
+- `@emotion/styled`
+- `@mui/lab`
+- `@mui/material`
+- `@storybook/addons`
+- `@testing-library/jest-dom`
+- `@testing-library/react`
+- `@testing-library/user-event`
+- `formik`
+- `mini-css-extract-plugin`
+- `polished`
+- `react`
+- `react-dom`
+- `react-icons`
+- `react-modal`
+- `react-router-dom`
+- `react-toastify`
+- `recharts`
+- `styled-components`
+- `typescript`
+- `web-vitals`
+- `yup`
 
-### `npm test`
+## Scripts
+- `start:webpack`: Inicia o servidor de desenvolvimento do Webpack.
+- `build`: Compila o projeto com Webpack.
+- `storybook`: Inicia o Storybook para visualização e documentação dos componentes.
+- `build-storybook`: Gera a versão estática do Storybook.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalação
+Clone o repositório e instale as dependências:
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/usuario/ft-bot-components.git
+cd ft-bot-components
+npm install
+yarn add
