@@ -1,5 +1,6 @@
-# components
+# Components
 Bem-vindo ao repositório do **ft-bot-components**! Este projeto é uma solução abrangente para o desenvolvimento de uma biblioteca de componentes reutilizáveis e a integração com microserviços. Ele é projetado para facilitar a criação e a manutenção de componentes de UI e a configuração de um ambiente de desenvolvimento eficiente usando Storybook, Webpack e microserviços.
+[Acessar Storybook](https://storybook-educcaflex.netlify.app/?path=/docs/introduction--docs/)
 
 ## Estrutura do Projeto
 ### 📦 Componentização de Componentes
