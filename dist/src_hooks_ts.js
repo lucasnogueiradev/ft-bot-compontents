@@ -45,7 +45,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// eslint-disable-next-line import/no-anonymous-default-export\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n  title: \"dark\",\n  colors: {\n    primary: \"#101a23\",\n    secondary: \"#2A343C\",\n    tertiary: \"#19746B\",\n    font: \"#a3a2a2\",\n    white: \"#fff\",\n    black: \"#000\",\n    gray: \"#a7adb1\",\n    success: \"#009965\",\n    info: \"#2849D9\",\n    warning: \"#6A23DE\"\n  }\n});\n\n//# sourceURL=webpack://ft-bot-components/./src/styles/themes/Dark.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// eslint-disable-next-line import/no-anonymous-default-export\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n  title: \"dark\",\n  colors: {\n    primary: \"#141414\",\n    secondary: \"#10101E\",\n    tertiary: \"#19746B\",\n    font: \"#a3a2a2\",\n    white: \"#fff\",\n    black: \"#000\",\n    gray: \"#d6d4d4\",\n    success: \"#009965\",\n    info: \"#2849D9\",\n    warning: \"#6A23DE\"\n  }\n});\n\n//# sourceURL=webpack://ft-bot-components/./src/styles/themes/Dark.ts?");
 
 /***/ }),
 
@@ -55,7 +55,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// eslint-disable-next-line import/no-anonymous-default-export\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n  title: \"light\",\n  colors: {\n    primary: \"#fff\",\n    secondary: \"#EEEEF2\",\n    tertiary: \"#F5F5F5\",\n    font: \"#616480\",\n    white: \"#000\",\n    black: \"#FFF\",\n    gray: \"#BFBFBF\",\n    success: \"#03BB85\",\n    info: \"#3B5998\",\n    warning: \"FF6961\"\n  }\n});\n\n//# sourceURL=webpack://ft-bot-components/./src/styles/themes/Light.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// eslint-disable-next-line import/no-anonymous-default-export\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n  title: \"light\",\n  colors: {\n    primary: \"#fff\",\n    secondary: \"#EEEEF2\",\n    tertiary: \"#F5F5F5\",\n    font: \"#616480\",\n    white: \"#fff\",\n    black: \"#FFF\",\n    gray: \"#BFBFBF\",\n    success: \"#03BB85\",\n    info: \"#3B5998\",\n    warning: \"FF6961\"\n  }\n});\n\n//# sourceURL=webpack://ft-bot-components/./src/styles/themes/Light.ts?");
 
 /***/ })
 
