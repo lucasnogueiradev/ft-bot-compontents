@@ -3,7 +3,7 @@
   "entries": {
     "introduction--docs": {
       "id": "introduction--docs",
-      "title": "Introduction",
+      "title": "Introduction2",
       "name": "Docs",
       "importPath": "./src/stories/Configure.mdx",
       "storiesImports": [],
