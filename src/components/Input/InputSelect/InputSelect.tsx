@@ -6,17 +6,25 @@ interface SelectProps {
   options: string[];
   onChange: (value: string) => void;
   name: string;
+  label: string;
 }
 
 // Definindo o componente
-const SelectInput: React.FC<SelectProps> = ({ options, onChange, name }) => {
+const SelectInput: React.FC<SelectProps> = ({
+  options,
+  label,
+  onChange,
+  name,
+}) => {
   return (
     <S.Container>
+      {label && <S.Label htmlFor={label}>{label}</S.Label>}
       <S.ContainerInput>
         <StyledSelect name={name} onChange={(e) => onChange(e.target.value)}>
           {options.map((option, index) => (
             <option key={index} value={option}>
               {option}
+              <p> {option}</p>
             </option>
           ))}
         </StyledSelect>

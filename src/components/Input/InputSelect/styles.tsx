@@ -4,12 +4,11 @@ import styled from "styled-components";
 export const StyledSelect = styled.select`
   width: 100%;
   max-width: 100%;
-  padding: 1rem;
+  padding: 1rem 0.3rem;
   border: none;
   font-size: 1rem;
-  border-radius: 2rem;
-  background: #e0e0e0;
-  -webkit-box-shadow: 0 0 0px 1000px #e0e0e0 inset;
+  border-radius: 1rem;
+  background: #fff;
   &::placeholder {
     color: ${(props) => props.theme.colors.font};
     font-size: 1rem;
@@ -18,7 +17,7 @@ export const StyledSelect = styled.select`
   &:focus {
     border-color: none;
     outline: none;
-    background: #e0e0e0;
+    background: #ffffff;
   }
 `;
 
@@ -31,7 +30,7 @@ export const Label = styled.label`
   font-family: "Poppins", sans-serif;
   display: flex;
   width: 72%;
-  padding: 0 0 7px 0;
+  padding: 0 0 7px 1rem;
   margin: auto;
 `;
 export const Adornment = styled.span`
@@ -41,18 +40,19 @@ export const Adornment = styled.span`
   margin: auto;
 `;
 export const ContainerInput = styled.div`
-  width: 70%;
-  max-width: 70%;
-  background: #e0e0e0;
-
-  border-radius: 2rem;
-  padding: 0 0 0 1rem;
+  width: 66%;
+  max-width: 66%;
+  background: #ffffff;
+  border: 1.5px solid #ccc;
+  border-radius: 1rem;
+  padding: 0 0.5rem 0 1rem;
   display: flex;
   margin: auto;
+
   &:focus-within {
     border-color: ${(props) => props.theme.colors.tertiary};
     outline: 1px solid ${(props) => props.theme.colors.tertiary};
-    background: #e0e0e0;
+    background: #ffffff;
     ${Adornment} {
       svg {
         color: ${(props) => props.theme.colors.tertiary};
@@ -78,7 +78,7 @@ export const StartAdornment = styled(Adornment)`
 `;
 
 export const Error = styled.span`
-  width: 100%;
+  width: 70%;
   font-family: "Poppins", sans-serif;
   position: absolute;
   color: red;
@@ -88,7 +88,7 @@ export const Error = styled.span`
 
 export const ContentInput = styled.div`
   position: relative;
-  width: 70%;
-  max-width: 70%;
+  width: 100%;
+  max-width: 100%;
   margin: auto;
 `;
